@@ -3,6 +3,7 @@ import { PrimaryButton } from "./components/atoms/button/PrimaryButton";
 import { SecondaryButton } from "./components/atoms/button/SecondaryButton";
 import { SeachInput } from "./components/molcules/SeachInput";
 import { UserCard } from "./components/orgamisms/UserCard";
+import { DefaultLayout } from "./components/template/DefaultLayout";
 import { HeaderOnly } from "./components/template/HeaderOnly";
 import "./styles.css";
 
@@ -20,12 +21,12 @@ export function App() {
   };
   return (
     <BrowserRouter>
-      <HeaderOnly>
+      <DefaultLayout>
         <PrimaryButton>テスト</PrimaryButton>
         <SecondaryButton>検索</SecondaryButton>
         <SeachInput />
         <UserCard user={user} />
-      </HeaderOnly>
+      </DefaultLayout>
     </BrowserRouter>
   );
 }
