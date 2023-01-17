@@ -11,7 +11,7 @@ export const Header = () => {
 };
 
 const SHeader = styled.header`
-  background-color: #fff;
+  background-color: #11999e;
   text-align: center;
   padding: 8px 0;
 `;

@@ -6,7 +6,7 @@ export const Footer = () => {
 };
 
 const SFooter = styled.footer`
-  background-color: #fff;
+  background-color: #11999e;
   text-align: center;
   padding: 8px 0;
   position: fixed;

@@ -6,6 +6,7 @@ import { UserCard } from "./components/orgamisms/UserCard";
 import { DefaultLayout } from "./components/template/DefaultLayout";
 import { HeaderOnly } from "./components/template/HeaderOnly";
 import "./styles.css";
+import { Router } from "./router/router";
 
 export function App() {
   const user = {
@@ -19,14 +20,5 @@ export function App() {
     },
     website: "https://google.com"
   };
-  return (
-    <BrowserRouter>
-      <DefaultLayout>
-        <PrimaryButton>テスト</PrimaryButton>
-        <SecondaryButton>検索</SecondaryButton>
-        <SeachInput />
-        <UserCard user={user} />
-      </DefaultLayout>
-    </BrowserRouter>
-  );
+  return <Router />;
 }
